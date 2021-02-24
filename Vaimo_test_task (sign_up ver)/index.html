@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	  	<link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
+	  	<link href="assets/fonts/stylesheet.css" type="text/css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/js/slinky.min.js"></script>
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/slinky.min.css" type="text/css" rel="stylesheet" />
+		<title>Vaimo test task / Zorya Sergey</title>
+	</head>
+		<body>
+			<header>
+				<div class="header_banner" id="mobile_header_banner">
+					<p>We deliver Worldwide</p>
+					<a href="#">Our stores</a>
+				</div>
+				<div class="header_nav" id="mobile_header">
+					<div class="mobile_nav">
+						<a href="javascript:void(0);" class="mobile_nav_menu_button" id="mobile_nav" onclick="mobile_nav_menu_responsive_Function()"></a>
+						<a href="javascript:void(0);" class="mobile_search_button" id="mobile_search" onclick="search_block_responsive_Function()"></a>
+					</div>
+					<h2><a href="#">Aurora</a></h2>
+					<nav>
+						<form class="search_block" id="search_nav">
+							<div class="search_overlay"></div>
+							<div class="search_input">
+								<input class="search" type="input" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value=''}" onBlur="if (this.value == '') {this.value='What are you looking for?'}">
+								<button class="search_button" type="submit"></button>
+							</div>
+						</form>
+						<div class="js_top_menu">
+							<ul class="nav_menu" id="mobile_nav_menu">
+								<li><a href="#">what’s new</a></li>
+								<li>
+									<a href="#">women</a>
+									<ul>									
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul>
+								</li>
+								<li><a href="#">accessories</a>
+									<ul>
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>								
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href="#">kids</a>
+									<ul>									
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>								
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href="#">beauty</a>
+									<ul>									
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>								
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href="#">outlet</a>
+									<ul>									
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>								
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href="#">stories</a>
+									<ul>									
+										<div class="nav_menu_title_link">
+											<a href="#">View all</a>
+										</div>
+										<li>
+											<a href="#">Clothing</a>
+											<ul>								
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+												<li><a href="#">Dresses</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Collections</a>
+											<ul>									
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+											</ul></li>
+										<li><a href="#">Collabs</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+											</ul></li>
+										<li><a href="#">Bands</a>
+											<ul>
+												<div class="nav_menu_title_link">
+													<a href="#">View all</a>
+												</div>							
+												<li><a href="#">T-shirts</a></li>
+												<li><a href="#">Sweatshirts</a></li>
+												<li><a href="#">Knitwear</a></li>
+												<li><a href="#">Jeans</a></li>
+												<li><a href="#">Jumpsuits</a></li>
+												<li><a href="#">Skirts</a></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+						</div>
+					</nav>
+					<!-- Changing styles for signed_up option -->
+					<div class="sign_up_block" id="mobile_sign_up">
+						<a href="#" class="sign_in">Sign in</a>
+						<a href="#" class="register">Register</a>
+						<a href="#" class="shop_basket" id="mobile_basket"></a>
+					</div>
+					<!-- <div class="signed_up_block" id="mobile_signed_up">
+						<a href="#" class="signed_in">Hi, Angels!</a>
+						<a href="#" class="shop_basket" id="mobile_basket"></a>
+					</div> -->
+				</div>
+			</header>
+			<main>
+				<div>
+					<h1>Hello! Welcome to Aurora</h1>
+				</div>
+				<div class="email_register_block">
+					<p>New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.</p>
+					<form class="email_register_menu">
+						<input class="email_register" type="input" value="Your email address" onfocus="if (this.value == 'Your email address') {this.value=''}" onBlur="if (this.value == '') {this.value='Your email address'}">
+						<button class="register_button" type="submit">Register</button>
+					</form>
+				</div>
+			</main>
+			<footer>
+				<div class="footer_menu">
+					<div class="about_us_block">
+						<h3>About Us</h3>
+						<a href="#">Who we are</a>
+						<a href="#">Our stores</a>
+						<a href="#">Customer Reviews</a>
+					</div>
+					<div class="Categories_block">
+						<h3>Categories</h3>
+						<a href="#">Women fashion</a>
+						<a href="#">Accessories</a>
+						<a href="#">Kids</a>
+					</div>
+					<div class="help_block">
+						<h3>Help</h3>
+						<a href="#">Customer service</a>
+						<a href="#">Size guide</a>
+						<a href="#">Contact us</a>
+					</div>
+					<div class="Payments_and_Delivery_block">
+						<h3>Payments & Delivery</h3>
+						<a href="#">Purchase terms</a>
+						<a href="#">Guarantee</a>
+					</div>
+					<div class="Social_block">
+						<h3>Social</h3>
+						<div class="social_links">
+							<a href="#" class="insta"></a>
+							<a href="#" class="twitter"></a>
+							<a href="#" class="snapchat"></a>
+							<a href="#" class="facebook"></a>
+							<a href="#" class="youtube"></a>
+						</div>
+					</div>
+				</div>
+				<nav class="footer_nav">					
+					<ul class="footer_nav-bar">
+						<li class="nav-bar__list-item">
+							<input type="checkbox" id="toggle-sub-1" class="nav-bar__toggle">
+							<label for="toggle-sub-1" class="nav-bar__label">About Us</label>
+							<ul class="nav-bar__list">
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Who we are</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Our stores</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Customer Reviews</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-bar__list-item">
+							<input type="checkbox" id="toggle-sub-2" class="nav-bar__toggle">
+							<label for="toggle-sub-2" class="nav-bar__label">Categories</label>
+							<ul class="nav-bar__list">
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Women fashion</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Accessories</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Kids</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-bar__list-item">
+							<input type="checkbox" id="toggle-sub-3" class="nav-bar__toggle">
+							<label for="toggle-sub-3" class="nav-bar__label">Help</label>
+							<ul class="nav-bar__list">
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Customer service</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Size guide</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Contact us</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-bar__list-item">
+							<input type="checkbox" id="toggle-sub-4" class="nav-bar__toggle">
+							<label for="toggle-sub-4" class="nav-bar__label">Payments & Delivery</label>
+							<ul class="nav-bar__list">
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Purchase terms</a>
+								</li>
+								<li class="nav-bar__list-item">
+									<a href="#" class="nav-bar__link">Guarantee</a>
+								</li>
+							</ul>
+						</li>
+					</ul>				
+					<div class="social_links">
+						<a href="#" class="insta"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="snapchat"></a>
+						<a href="#" class="facebook"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</nav>
+				<div class="footer_copyright">© Copyright, Aurora 2020. All Rights reserved.</div>
+			</footer>
+		</body>	
+</html>
+
+<script>$(function(){
+	if ( $(window).width() < 360 ) {
+	var slinky = $('.js_top_menu').slinky({
+	  title: true
+	});  
+	}
+  });
+</script>
+
+<script>
+	function mobile_nav_menu_responsive_Function() {
+	var x = document.getElementById("mobile_nav_menu");
+		if (x.className === "nav_menu") {
+		x.className += "_responsive";
+		} else {
+		x.className = "nav_menu";
+		}
+	var x = document.getElementById("mobile_nav");
+		if (x.className === "mobile_nav_menu_button") {
+		x.className += "_responsive";
+		} else {
+		x.className = "mobile_nav_menu_button";
+		}
+	var x = document.getElementById("mobile_search");
+		if (x.className === "mobile_search_button") {
+		x.className += "_change_icon";
+		} else {
+		x.className = "mobile_search_button";
+		}		
+	var x = document.getElementById("mobile_header");
+		if (x.className === "header_nav") {
+		x.className += "_burger_menu";
+		} else {
+		x.className = "header_nav";
+		}
+    // Changing styles for signed_up option
+	// var x = document.getElementById("mobile_signed_up");
+	// 	if (x.className === "signed_up_block") {
+	// 	x.className += "_burger_menu";
+	// 	} else {
+	// 	x.className = "signed_up_block";
+	// 	}
+	var x = document.getElementById("mobile_sign_up");
+		if (x.className === "sign_up_block") {
+		x.className += "_burger_menu";
+		} else {
+		x.className = "sign_up_block";
+		}
+	var x = document.getElementById("mobile_header_banner");
+		if (x.className === "header_banner") {
+		x.className += "_burger_menu";
+		} else {
+		x.className = "header_banner";
+		}
+	}
+</script>
+
+<script>
+	function search_block_responsive_Function() {
+	var x = document.getElementById("search_nav");
+		if (x.className === "search_block") {
+		x.className += "_responsive";
+		} else {
+		x.className = "search_block";
+		}
+
+	var x = document.getElementById("mobile_search");
+		if (x.className === "mobile_search_button") {
+		x.className += "_responsive";
+		} else {
+		x.className = "mobile_search_button";
+		}
+		
+	var x = document.getElementById("mobile_header");
+		if (x.className === "header_nav") {
+		x.className += "_responsive";
+		} else {
+		x.className = "header_nav";
+		}
+		
+	var x = document.getElementById("mobile_nav");
+		if (x.className === "mobile_nav_menu_button") {
+		x.className += "_change_icon";
+		} else {
+		x.className = "mobile_nav_menu_button";
+		}
+		
+	var x = document.getElementById("mobile_basket");
+		if (x.className === "shop_basket") {
+		x.className += "_change_icon";
+		} else {
+		x.className = "shop_basket";
+		}
+	}
+</script>

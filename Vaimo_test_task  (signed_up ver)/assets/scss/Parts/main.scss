@@ -1,0 +1,103 @@
+main {
+
+    & div:first-child {
+        padding: 75px 0 0;
+        height: 600px;
+        width: 100%;
+        // Changing styles for signed_up option    
+        // background: url("images/main_bg.png") no-repeat;
+        background: url("images/main_bg_signed_up.png") no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        @include max-screen(1200) {
+            height: 450px;
+        }
+
+        
+        @include max-screen(800) {
+            background: url("images/main_bg_signed_up.png") center 25% no-repeat;
+            height: 400px;
+        }
+
+        @include max-screen(360) {
+            background: url("images/mobile_bg.png") center 100% no-repeat;
+            height: 420px;
+        }
+    }
+}
+
+.email_register_block {
+    height: 146px;
+    width: 100%;
+    padding: 32px 0;
+
+    p {
+        margin: 0 auto;
+        max-width: 439px;
+        
+        @include max-screen(480) {            
+            max-width: 90%;
+            width: 328px;     
+        }
+    }
+    @include max-screen(480) {
+        height: auto;
+        padding: 24px 0;
+    }
+}
+
+
+.email_register_menu {
+    margin: 14px auto 0;
+    max-width: 439px;
+    
+    @include max-screen(480) {           
+        max-width: 90%;
+        width: 328px;          
+    }
+}
+
+.email_register {
+    padding: 0 11px;
+    width: 301px;
+    height: 32px;
+    @include font-param(11px, 16px);
+    letter-spacing: 0.8px;
+    color: $email_register_font_color;
+    border: 1px $border_color solid;
+
+    @include max-screen(480) {           
+        max-width: 56%;
+        width: 224px;          
+    }
+}
+
+.register_button{
+    margin: 0 0 0 12px;
+    @include font-param (10px, 20px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    width: 94px;
+    height: 32px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+
+    @include max-screen(480) { 
+        margin: 0 0 0 8px;
+        width: 94px;                   
+        max-width: 29%;
+    }
+    
+    &:hover {
+        color: $yellow;
+        transition: color 0.8s easy-in-out;
+      }
+}
+        

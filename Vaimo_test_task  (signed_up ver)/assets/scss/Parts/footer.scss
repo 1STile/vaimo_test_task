@@ -1,0 +1,185 @@
+footer {
+    background: $footer_bg;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    width: 892px;
+    margin: 0 auto;
+
+    a {
+        @include font-param (12px, 19px);
+        letter-spacing: 0.1px;
+        margin: 0 0 6px 0;
+        color: #000;
+            
+        &:hover {
+            color: $yellow;
+            transition: color 0.8s easy-in-out;
+        }
+    }
+    
+    h3 {
+        margin: 0 0 17px 0;
+    }
+
+    & > div {
+        max-width: 146px;
+        margin: 26px 0;
+    }
+
+    @include max-screen(800) {
+        display: none;
+    }
+}
+
+.Payments_and_Delivery_block h3 {
+    margin: 0 0 20px 0;
+}
+
+.social_links {
+    display: flex;
+    justify-content: flex-start;
+
+    
+    @include max-screen(800) {
+        justify-content: space-between;        
+        max-width: 185px;
+        margin: 24px auto 17px;
+    }
+
+    a {
+        min-width: 18px;
+        height: 18px;
+        margin: 0 16px 0 0;
+
+        &:hover {
+            transform: rotate(360deg);
+            transition: 0.85s ease-in-out;
+        }
+    }
+}
+
+.insta {
+    background: url('images/icons/insta.png') center no-repeat;
+}
+.twitter {
+    background: url('images/icons/twitter.png') center no-repeat;
+}
+.snapchat {
+    background: url('images/icons/snapchat.png') center no-repeat;
+}
+.facebook {
+    background: url('images/icons/facebook.png') center no-repeat;
+}
+.youtube {
+    background: url('images/icons/youtube.png') center no-repeat;
+}
+
+.footer_copyright {
+    @include font-param (9px, 13px);
+    padding: 14px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.footer_nav {
+    display: none;
+    width: 100%;
+    background: $footer_bg;
+
+    @include max-screen(800) {
+        display: block;
+    }
+
+}
+
+.nav-bar__label {
+    cursor: pointer;
+}
+
+.nav-bar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-bar__list,
+[type^="checkbox"] {
+    display: none;
+}
+
+[type^="checkbox"]:checked ~ .nav-bar__list {
+    display: block;
+    padding: 0 0 8px;    
+}
+
+.nav-bar__label::after,
+[type^="checkbox"] { 
+    content: url('images/icons/Chevron_right.png');
+    position: absolute;
+    right: 16px;
+}
+
+[type^="checkbox"]:checked + .nav-bar__label::after {
+    transform: rotate(90deg);
+}
+
+.nav-bar__list-item {
+    display: block;
+    margin: 0 16px;
+}
+
+.nav-bar__link,
+.nav-bar__label {
+    color: #000;
+    display: block;
+    padding: 16px 16px 12.5px;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.footer_nav-bar > li {
+    border-bottom: 1px $border_color solid;    
+}
+
+.nav-bar__list-item .nav-bar__list-item .nav-bar__label {
+    padding: 10px 10px 10px 30px;
+}
+
+.nav-bar__link {    
+    @include font-param (12px, 19px);
+    letter-spacing: 0.1px;
+    margin: 0;
+    color: #000;
+    padding: 5px 0;
+}
+.nav-bar__link:hover,
+.nav-bar__link:active,
+.nav-bar__label:hover {
+    opacity: 0.6;
+}
+
+@media all and (min-width : 800px) {
+
+    .footer_nav-bar > .nav-bar__list {
+        display: block;
+    }
+
+    .footer_nav-bar > .nav-bar__list > .nav-bar__list-item {
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-bar__list-item .nav-bar__list {
+        position: absolute;
+    }
+
+    .nav-bar__list-item .nav-bar__list-item .nav-bar__link,
+    .nav-bar__list-item .nav-bar__list-item .nav-bar__label {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,22 @@
+// Import Utils
+@import "./Utils/reset";
+@import "./Utils/mixins";
+@import "./Utils/utils";
+
+// font-awesome https://fontawesome.com/v4.7.0/icons/
+// @import "./FontAwesome/font-awesome";
+
+// Import all project Components
+@import "./Components/typography";
+@import "./Components/variables";
+@import "./Components/sprite";
+
+// Import all project Parts
+@import	"./Parts/header";
+@import	"./Parts/main";
+@import	"./Parts/footer";
+
+// Import Pages 
+// @import "./Pages/home";
+ 
+ 
