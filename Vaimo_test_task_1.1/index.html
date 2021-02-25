@@ -3,10 +3,12 @@
     <head>
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	  	<link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
-	  	<link href="assets/fonts/stylesheet.css" type="text/css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="assets/js/slinky.min.js"></script>
+		<link href="assets/fonts/stylesheet.css" type="text/css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 		<link href="assets/css/slinky.min.css" type="text/css" rel="stylesheet" />
+		<script src="assets/js/responsive_nav_menu.js"></script>
+		<script src="assets/js/responsive_search.js"></script>
+		<script src="assets/js/slinky.min.js"></script>		
 		<title>Vaimo test task / Zorya Sergey</title>
 	</head>
 		<body>
@@ -362,15 +364,15 @@
 						</div>
 					</nav>
 					<!-- Changing styles for signed_up option -->
-					<!-- <div class="sign_up_block" id="mobile_sign_up">
-						<a href="#" class="sign_in">Sign in</a>
+					<div class="sign_up_block" id="mobile_sign_up">
+						<a href="index_signed_up.html" class="sign_in">Sign in</a>
 						<a href="#" class="register">Register</a>
 						<a href="#" class="shop_basket" id="mobile_basket"></a>
-					</div> -->
-					<div class="signed_up_block" id="mobile_signed_up">
+					</div>
+					<!-- <div class="signed_up_block" id="mobile_signed_up">
 						<a href="#" class="signed_in">Hi, Angels!</a>
 						<a href="#" class="shop_basket" id="mobile_basket"></a>
-					</div>
+					</div> -->
 				</div>
 			</header>
 			<main>
@@ -501,91 +503,4 @@
 	});  
 	}
   });
-</script>
-
-<script>
-	function mobile_nav_menu_responsive_Function() {
-	var x = document.getElementById("mobile_nav_menu");
-		if (x.className === "nav_menu") {
-		x.className += "_responsive";
-		} else {
-		x.className = "nav_menu";
-		}
-	var x = document.getElementById("mobile_nav");
-		if (x.className === "mobile_nav_menu_button") {
-		x.className += "_responsive";
-		} else {
-		x.className = "mobile_nav_menu_button";
-		}
-	var x = document.getElementById("mobile_search");
-		if (x.className === "mobile_search_button") {
-		x.className += "_change_icon";
-		} else {
-		x.className = "mobile_search_button";
-		}		
-	var x = document.getElementById("mobile_header");
-		if (x.className === "header_nav") {
-		x.className += "_burger_menu";
-		} else {
-		x.className = "header_nav";
-		}
-    // Changing styles for signed_up option
-	var x = document.getElementById("mobile_signed_up");
-		if (x.className === "signed_up_block") {
-		x.className += "_burger_menu";
-		} else {
-		x.className = "signed_up_block";
-		}
-	// var x = document.getElementById("mobile_sign_up");
-	// 	if (x.className === "sign_up_block") {
-	// 	x.className += "_burger_menu";
-	// 	} else {
-	// 	x.className = "sign_up_block";
-	// 	}
-	var x = document.getElementById("mobile_header_banner");
-		if (x.className === "header_banner") {
-		x.className += "_burger_menu";
-		} else {
-		x.className = "header_banner";
-		}
-	}
-</script>
-
-<script>
-	function search_block_responsive_Function() {
-	var x = document.getElementById("search_nav");
-		if (x.className === "search_block") {
-		x.className += "_responsive";
-		} else {
-		x.className = "search_block";
-		}
-
-	var x = document.getElementById("mobile_search");
-		if (x.className === "mobile_search_button") {
-		x.className += "_responsive";
-		} else {
-		x.className = "mobile_search_button";
-		}
-		
-	var x = document.getElementById("mobile_header");
-		if (x.className === "header_nav") {
-		x.className += "_responsive";
-		} else {
-		x.className = "header_nav";
-		}
-		
-	var x = document.getElementById("mobile_nav");
-		if (x.className === "mobile_nav_menu_button") {
-		x.className += "_change_icon";
-		} else {
-		x.className = "mobile_nav_menu_button";
-		}
-		
-	var x = document.getElementById("mobile_basket");
-		if (x.className === "shop_basket") {
-		x.className += "_change_icon";
-		} else {
-		x.className = "shop_basket";
-		}
-	}
 </script>
