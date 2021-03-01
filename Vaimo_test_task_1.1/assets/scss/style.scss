@@ -9,7 +9,7 @@
 // Import all project Components
 @import "./Components/typography";
 @import "./Components/variables";
-@import "./Components/sprite";
+@import "../sprites/sprite";
 
 // Import all project Parts
 @import	"./Parts/header";
@@ -17,6 +17,4 @@
 @import	"./Parts/footer";
 
 // Import Pages 
-// @import "./Pages/home";
- 
- 
+// @import "./Pages/home"; 

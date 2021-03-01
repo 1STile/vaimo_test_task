@@ -1,31 +1,24 @@
 main {
-
     & div:first-child {
         padding: 75px 0 0;
-        height: 600px;
+        height: 680px;
         width: 100%;
-        // Changing styles for signed_up option    
-        // background: url("images/main_bg.png") no-repeat;
         background: url("images/main_bg_signed_up.png") no-repeat;
-        background-size: 100%;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        
         @include max-screen(1200) {
-            height: 450px;
+            height: 580px; 
         }
-
         
         @include max-screen(800) {
-            background: url("images/main_bg_signed_up.png") center 25% no-repeat;
-            height: 400px;
+            height: 480px;
         }
 
         @include max-screen(360) {
-            background: url("images/mobile_bg.png") center 100% no-repeat;
-            height: 420px;
+            background: url("images/mobile_bg.png") center top no-repeat;
         }
     }
 }
@@ -99,5 +92,4 @@ main {
         color: $yellow;
         transition: color 0.8s easy-in-out;
       }
-}
-        
+} 

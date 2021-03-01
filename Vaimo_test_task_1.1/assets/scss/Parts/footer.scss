@@ -28,6 +28,7 @@ footer {
     & > div {
         max-width: 146px;
         margin: 26px 0;
+
     }
 
     @include max-screen(800) {
@@ -51,31 +52,33 @@ footer {
     }
 
     a {
-        min-width: 18px;
-        height: 18px;
         margin: 0 16px 0 0;
+        transition: 0.85s ease-in-out;
+
+        &:last-child {
+            margin: 0;
+        }
 
         &:hover {
             transform: rotate(360deg);
-            transition: 0.85s ease-in-out;
         }
     }
 }
 
 .insta {
-    background: url('images/icons/insta.png') center no-repeat;
+    @include sprite($insta);
 }
 .twitter {
-    background: url('images/icons/twitter.png') center no-repeat;
+    @include sprite($twitter);
 }
 .snapchat {
-    background: url('images/icons/snapchat.png') center no-repeat;
+    @include sprite($snapchat);
 }
 .facebook {
-    background: url('images/icons/facebook.png') center no-repeat;
+    @include sprite($facebook);
 }
 .youtube {
-    background: url('images/icons/youtube.png') center no-repeat;
+    @include sprite($youtube);
 }
 
 .footer_copyright {
@@ -119,7 +122,8 @@ footer {
 
 .nav-bar__label::after,
 [type^="checkbox"] { 
-    content: url('images/icons/Chevron_right.png');
+    content: '';
+    @include sprite($-chevron_right);
     position: absolute;
     right: 16px;
 }

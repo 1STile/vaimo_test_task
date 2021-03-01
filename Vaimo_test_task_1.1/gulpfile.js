@@ -33,7 +33,7 @@ gulp.task('sprite', function () {
       cssName: 'sprite.scss',
       padding: 20
     }));
-    return spriteData.pipe(gulp.dest('assets/css/sprites/'));
+    return spriteData.pipe(gulp.dest('assets/sprites/'));
   });
 
 
